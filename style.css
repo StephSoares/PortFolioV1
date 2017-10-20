@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Cairo', sans-serif;
-  background-color:  rgba(244, 239, 227, .5);
+  background-color:  #FEFEFE;
 }
 header {
   background: url(./image/ordi3.jpeg) no-repeat center;
@@ -10,7 +10,7 @@ header {
 
 }
 footer {
-  background-color: #BFAC85;
+  background-color: #C7D0D7;
   flex-direction: column;
 }
 footer a {
@@ -18,8 +18,12 @@ footer a {
   text-decoration: none;
   color: black;
 }
+#contact{
+  padding-top: 50px;
+}
 .flex-container {
   display:flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
@@ -62,15 +66,24 @@ header h3 {
 section h2 {
   text-transform: uppercase;
 }
+
 .present {
-  background-color: #BFAC85;
-  text-align: left;
+  background-color: #C7D0D7;
   margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.tableau{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .present h2 {
     margin:0;
 }
-
+.half-size{
+  width: 60%;
 }
 .flex-contain{
   display:flex;
@@ -81,15 +94,36 @@ section h2 {
   text-decoration: none;
 }
 
-.min-size-small{
-  min-width: 300px;
-}
 .flex-wrap{
   flex-wrap: wrap;
 }
 .section-container{
   padding-left: 10%;
   padding-right: 10%;
+}
+
+* {box-sizing:border-box}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+.html {width: 45%; background-color: #E47302;}
+.css {width: 45%; background-color: #2196F3;}
+.bash {width: 25%; background-color: #f44336;}
+.jquery {width: 10%; background-color: #046493;}
+
+.compt-logo {
+  width: 50px;
+  height: 50px;
 }
 @media screen and (max-width:800px){
   .flex-container{
