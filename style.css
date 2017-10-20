@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color:  rgba(244, 239, 227, .5);
+}
+header {
+  background: url(./image/ordi3.jpeg) no-repeat center;
+  padding-top: 100px;
+  overflow: hidden;
+
+}
+footer {
+  background-color: #BFAC85;
+  flex-direction: column;
+}
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+.flex-container {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-container-column{
+  flex-direction: column;
+}
+header ul {
+  margin-top: 120px;
+  padding: 0;
+  list-style: none;
+}
+header li {
+  margin-left: 2px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+}
+header li a {
+  color: #fff;
+  text-decoration: none;
+}
+header h1{
+  color: #FFF;
+  margin:0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 80px;
+  text-shadow: 2px 2px black;
+
+}
+header h3 {
+  color:#FFF;
+  margin:0;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+section h2 {
+  text-transform: uppercase;
+}
+.present {
+  background-color: #BFAC85;
+  text-align: left;
+  margin-top: 20px;
+}
+.present h2 {
+    margin:0;
+}
+
+}
+.flex-contain{
+  display:flex;
+  align-items: center;
+}
+.list-no-style li a {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.min-size-small{
+  min-width: 300px;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.section-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width:800px){
+  .flex-container{
+    padding-top: 3%;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media screen and (max-width:1500px){
+  .flex-container{
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
