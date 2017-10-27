@@ -131,10 +131,15 @@ section h2 {
 .css {width: 45%; background-color: #2196F3;}
 .bash {width: 25%; background-color: #f44336;}
 .jquery {width: 10%; background-color: #046493;}
+.php {width: 15%; background-color: #767BB2;}
 
 .compt-logo {
   width: 50px;
   height: 50px;
+}
+.logophp{
+  width: 70px;
+  height: 47px;
 }
 @media screen and (max-width:800px){
   .flex-container{
