@@ -4,10 +4,21 @@ body {
   background-color:  #FEFEFE;
 }
 header {
-  background: url(./image/ordi3.jpeg) no-repeat center;
+  background: url(./image/Ordinateurimage.png) no-repeat center;
   padding-top: 100px;
   overflow: hidden;
 
+}
+.logo {
+  width: 35%;
+}
+.book {
+  width: 400px;
+  height: 200px;
+}
+.imgFake{
+  width: 400px;
+  height: 200px;
 }
 footer {
   background-color: #C7D0D7;
