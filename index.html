@@ -7,15 +7,28 @@
   <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="./image/logo_Ssoares.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+</head>
   <body>
     <header class="flex-container flex-container-column">
-      <h1>Stéphane Soares</h1>
+      <img src="./image/logo_Ssoares.png" class="logo" alt="logo">
       <h3>Developpeur Web Junior</h3>
       <ul class="list-no-style flex-contain">
-        <li><a href="#presentation"><i class="fa fa-user-circle-o fa-1x" aria-hidden="true"></i> Présentation</a></li>
-        <li><a href="#competences"><i class="fa fa-list" aria-hidden="true"></i> Compétences</a></li>
-        <li><a href="#portfolio"><i class="fa fa-laptop" aria-hidden="true"></i> PortFolio</a></li>
-        <li><a href="#contact"><i class="fa fa-id-card" aria-hidden="true"></i> Contact</a></li>
+        <li><a href="#presentation" class="js-scrollTo"><i class="fa fa-user-circle-o fa-1x" aria-hidden="true"></i> Présentation</a></li>
+        <li><a href="#competences" class="js-scrollTo"><i class="fa fa-list" aria-hidden="true"></i> Compétences</a></li>
+        <li><a href="#portfolio" class="js-scrollTo"><i class="fa fa-laptop" aria-hidden="true"></i> PortFolio</a></li>
+        <li><a href="#contact" class="js-scrollTo"><i class="fa fa-id-card" aria-hidden="true"></i> Contact</a></li>
       </ul>
     </header>
     <main>
@@ -25,7 +38,7 @@
           </section>
           <section class="flex-wrap min-size-small flex-container">
             <div class="min-size-small flex-container">
-              <img src="http://fakeimg.pl/250x100/">
+              <img src="./image/book.jpg" class="book">
             </div>
             <div class="half-size min-size-small">
               <h2>Ma Bio</h2>
@@ -78,14 +91,14 @@
               <section class="flex-wrap min-size-small flex-container tableau">
                 <h5>Pour l'instant, je n'ai aucuns projets à vous présenter car je débute dans le codage, mais je suis extrêmement motivé !</h5>
                 <div>
-                    <img src="http://fakeimg.pl/250x100/">
-                    <img src="http://fakeimg.pl/250x100/">
-                    <img src="http://fakeimg.pl/250x100/">
+                  <img src="./image/nature1.jpg" class="imgFake">
+                  <img src="./image/nature2.jpg" class="imgFake">
+                  <img src="./image/nature3.jpg" class="imgFake">
                 </div>
                 <div>
-                    <img src="http://fakeimg.pl/250x100/">
-                    <img src="http://fakeimg.pl/250x100/">
-                    <img src="http://fakeimg.pl/250x100/">
+                  <img src="./image/nature4.jpg" class="imgFake">
+                  <img src="./image/nature5.jpg" class="imgFake">
+                  <img src="./image/nature6.jpg" class="imgFake">
                 </div>
                 </section>
 
