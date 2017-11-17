@@ -1,0 +1,222 @@
+body{
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #F5F5F5;
+}
+.container_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-family: 'Revalia', cursive;
+  color: #01882E;
+}
+.title_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Revalia', cursive;
+  color: #01882E;
+  text-align: center;
+  font-size: 60px;
+}
+.vh_form {
+  height: 50vh;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  font-weight: bold;
+  color: black;
+  height: 40vh;
+
+}
+.container1 {
+  text-align: center;
+  color: black;
+}
+.container_educ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color:black;
+}
+
+.container_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #000;
+  width: 450px;
+  height: 500px;
+}
+.containt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.liens {
+  text-decoration: none;
+  color: black;
+}
+.enter {
+  background-color: #DFDFDF;
+  color: #000;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  outline: none;
+}
+#firstname {
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  outline: none;
+}
+#lastname {
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  outline: none;
+}
+#repassword {
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  outline: none;
+}
+#email {
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  outline: none;
+}
+#password {
+  width: 250px;
+  height: 30px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#date_begin {
+  width: 145px;
+  height: 30px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#date_ended {
+  width: 145px;
+  height: 30px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#title {
+  width: 500px;
+  height: 40px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#description{
+  width: 400px;
+  height: 400px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#bio {
+  width: 300px;
+  height: 300px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#avatar {
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  outline: none;
+
+}
+#check_car {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#permis {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#label {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#level {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+#ville {
+  width: 300px;
+  height: 300px;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+.container_log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  font-family: 'Titillium Web', sans-serif;
+}
+.container_log a {
+  background-color: #DFDFDF;
+  color: #000;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  font-weight: bold;
+}

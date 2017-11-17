@@ -1,0 +1,16 @@
+Liste de tâche de gestion BDD :
+-------------------------------------------------------
+Effectué la connexion à la BDD
+Récupérations des données navigateur
+Génération de la requête  SQL
+Consultation des résultats
+Représentation des résultats par rapport aux données utilisateur
+
+Exemples :
+--------------------------------------------------------
+exemple 1 : Exemple classique avec une table animals
+exemple 2 (mysqli && PDO) : Connexion d'un utilisateur
+exemple 3 (mysqli && PDO) : Inscription d'un utilisateur
+exemple 4 (mysqli && PDO) : Listing des utilisateurs
+exemple 5 (mysqli && PDO) : Listing des utilisateurs en requête préparée
+exemple 6 (mysqli && PDO) : Recherche en requête préparée.

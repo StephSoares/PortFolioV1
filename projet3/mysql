@@ -1,0 +1,13 @@
+mysqli_connect
+
+mysqli_query
+mysqli_fetch_assoc
+
+mysquli_insert_id
+
+mysqli_prepare
+mysqli_stmt_bind_param
+mysqli_stmt_execute
+
+mysqli_stmt_bind_result
+mysqli_stmt_fetch

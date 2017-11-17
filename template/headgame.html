@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+<head>
+  <meta charset="utf-8">
+  <title>Stéphane SOARES PortFolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Creepster|Freckle+Face" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" media="all">
+  <link rel="icon" type="image/png" href="./image/logo_Ssoares1.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+</head>
+  <body>
+    <header class="flex-container flex-container-column">
+      <img src="./image/logo_Ssoares1.png" class="logo" alt="logo">
+      <h3>Developpeur Web Junior</h3>
+      <ul class="list-no-style flex-contain">
+        <li><a href="/index.php"><i class="fa fa-home fa-1x" aria-hidden="true"></i> Acceuil</a></li>
+    </header>

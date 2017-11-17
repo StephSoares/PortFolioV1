@@ -1,0 +1,100 @@
+Blog !
+-----------
+
+Article
+  Titre
+  Contenue => Javascript : WYSIWYG
+  Date de parution
+  Date de mise à jour
+  Auteur
+  Tags
+  Catégorie
+  Commentaire
+
+Auteur (users)
+  Nom
+  Prénom
+  Email
+  ViadeoID
+  LinkedinID
+  GithubID
+
+Tags
+  Label
+
+Catégorie
+  Label
+
+Commentaire
+  Nom
+  Email
+  Contenue
+  Date de création
+  Status
+
+
+1 - Liste des articles (trier par date de parution DESC) => index.php
+
+  · 1 - Count du nombre de commentaire par article (articleId)
+
+2 - L'affichage d'un article (id) => article.php
+
+  · 1 - Récupère les catégories de l'article (articleId)
+
+  · 2 - Récupère les tags de l'article (articleId)
+
+        o 1 - (Table de Liaison 2 requêtes)
+
+  · 3 - Récupère les infos auteur (userId)
+
+  · 4 - Commentaire de l'article (articleId)
+
+3 - L'auteur (id) => author.php
+
+  · 1 - Une liste d'article (userId) (trier par date de parution DESC)
+
+4 - Liste des articles par tags
+
+5 - Liste des articles par catégories
+
+
+
+
+
+
+1 - SELECT `idarticles`, `title`, `content`, `publish_date` FROM `articles` ORDER BY `publish_date` DESC;
+
+    1.1 - SELECT COUNT (`articles_id`) FROM `comments` WHERE `articles_id` = ?;
+
+       ou SELECT COUNT(*) AS nbr_comments, `articles_id`, `title`, `articles`.`content`, CONCAT(`firstname`, ' ', `lastname`) AS fullname
+          FROM `comments`
+          INNER JOIN `articles` ON `articles`.`idarticles` = `comments`.`articles_id`
+          INNER JOIN `users` ON `articles`.`users_id` = `users`.`idusers`
+          GROUP BY `articles_id`
+          ORDER BY nbr_comments DESC;
+
+2 - SELECT * FROM `articles` WHERE `idarticles` = ?;
+
+    2.1 - SELECT `label` FROM `categories` WHERE `idcategories` = ?;
+
+    2.2 - SELECT `tags_id` FROM `articles_has_tags` WHERE `articles_id` = ?;
+       => SELECT `label` FROM `tags` WHERE `idtags` = ?;
+       ou SELECT `label`, `idtags` FROM `tags` WHERE `idtags` = ? OR `idtags` = ?; (qui réunni les 2 SELECT).
+
+       ou SELECT `articles_id`, `label` FROM `articles_has_tags`
+          INNER JOIN `tags` ON `tags`.`idtags` = `articles_has_tags`.`tags_id`
+          WHERE `articles_id` = 1;
+
+    2.3 - SELECT `lastname`, `firstname` FROM `users` WHERE `idusers` = ?;
+
+    2.4 - SELECT `content` FROM `comments` WHERE `articles_id` = ?;
+
+3 - SELECT * FROM `users` WHERE `idusers` = ?;
+
+    3.1 - SELECT * FROM `articles` WHERE `users_id` ORDER BY `publish_date` DESC;
+
+4 - SELECT `idtags` FROM `tags` WHERE `label` LIKE '%Yellow%';
+       => SELECT `articles_id` FROM `articles_has_tags` WHERE `tags_id` = ?;
+
+5 - SELECT `idcategories` FROM `categories` WHERE `label` LIKE '%Yellow%';
+       => SELECT * FROM `articles` WHERE `categories_id` = ?;

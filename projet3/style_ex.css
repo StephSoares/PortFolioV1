@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  background-color: #F5F5F5;
+  font-family: 'Quicksand', sans-serif;
+}
+header {
+  text-align: center;
+  font-size: 50px;
+}
+
+table {
+  margin-top: 50px;
+}
+thead {
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}

@@ -4,33 +4,120 @@ body {
   background-color:  #FEFEFE;
 }
 header {
-  background: url(./image/Ordinateurimage.png) no-repeat center;
+  background: url(./image/lisbon-2543511_1920.jpg) no-repeat center;
   padding-top: 100px;
   overflow: hidden;
-
 }
+
 .logo {
   width: 35%;
 }
 .book {
-  width: 400px;
-  height: 200px;
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50%;
+  width:250px;
+  height:250px;
+  box-shadow: 0px 0px 20px black;
 }
 .imgFake{
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
+}
+.related-post-item {
+  display: flex;
+  width: 33.333%;
+  margin: 0;
+  justify-content: center;
+}
+
+.link:hover{
+  padding: 10px 12px 3px 12px;
+  border-bottom-color: white;
+}
+.link {
+  display: flex;
+  width: 100%;
+  padding: 10px 12px 3px 12px;
+  border-bottom: 4px solid #E39501;
+  margin: 4px;
+  flex-direction: column;
+  text-align: center;
+  background: #E39501;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3), 0 2px 6px rgba(0,0,0,.2);
+}
+
+a:hover{
+  text-decoration: none;
+}
+.link:active span, .link:hover span {
+  color : white;
+}
+.related-post-title {
+  display: block;
+  margin-top : 30px;
+  padding-bottom: 10px;
+  color: black;
+  font-size: 0.95em;
+  line-height: 1.35;
+}
+.imgHalloween {
+  width: 700px;
+  height: 350px;
+  box-shadow: 0px 0px 15px black;
+}
+.imgForm {
+  width: 700px;
+  height: 350px;
+  box-shadow: 0px 0px 15px black;
+}
+.game {
+  margin: 5%;
+  text-align: center;
+}
+.form {
+  margin: 5%;
+  text-align: center;
+}
+.row {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 footer {
-  background-color: #C7D0D7;
+  background-color: #E39501;
   flex-direction: column;
+  color : white;
+}
+
+footer:hover a {
+  list-style: none;
+  text-decoration: none;
+  color: #FFF;
 }
 footer a {
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: #FFF;
 }
 #contact{
-  padding-top: 50px;
+  padding-top: 10px;
+}
+#presentation {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#competences {
+  background-color: #E6E6E6;
+  padding : 60px;
+  margin-top : 60px;
+}
+#portfolio {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.shadow {
+  text-shadow: 0px 0px 20px black;
 }
 .flex-container {
   display:flex;
@@ -54,19 +141,14 @@ header li {
   text-decoration: none;
   text-shadow: 2px 2px black;
 }
+li:hover a {
+  color : #E39501;
+}
 header li a {
   color: #fff;
   text-decoration: none;
 }
-header h1{
-  color: #FFF;
-  margin:0;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 80px;
-  text-shadow: 2px 2px black;
 
-}
 header h3 {
   color:#FFF;
   margin:0;
@@ -79,11 +161,13 @@ section h2 {
 }
 
 .present {
-  background-color: #C7D0D7;
-  margin-top: 20px;
+  margin: 20px;
+  font-family: 'Raleway', sans-serif;
+  color : #E39501;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  font-size: 25px;
 }
 .tableau{
   justify-content: center;
@@ -98,6 +182,7 @@ section h2 {
 }
 .flex-contain{
   display:flex;
+  justify-content: center;
   align-items: center;
 }
 .list-no-style li a {
@@ -113,11 +198,9 @@ section h2 {
   padding-right: 10%;
 }
 
-* {box-sizing:border-box}
-
 .container {
-    width: 100%;
-    background-color: #ddd;
+  width: 100%;
+  background-color: #ddd;
 }
 
 .skills {
@@ -126,20 +209,26 @@ section h2 {
     line-height: 40px;
     color: white;
 }
-
-.html {width: 45%; background-color: #E47302;}
-.css {width: 45%; background-color: #2196F3;}
-.bash {width: 25%; background-color: #f44336;}
-.jquery {width: 10%; background-color: #046493;}
-.php {width: 15%; background-color: #767BB2;}
-
-.compt-logo {
-  width: 50px;
-  height: 50px;
+.halloween {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  color: #930505;
+  margin: 0;
 }
-.logophp{
-  width: 70px;
-  height: 47px;
+.formulaire {
+  font-family: 'Revalia', cursive;
+  color :#01882E;
+}
+.game .flex-container {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 @media screen and (max-width:800px){
   .flex-container{

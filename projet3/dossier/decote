@@ -1,0 +1,32 @@
+
+<pre>
+<?php
+
+var_dump('$_POST', $_POST);
+var_dump(is_int($_POST['id']));
+
+
+
+//http://php.net/manual/fr/mysql.construct.php
+$host= "localhost";
+$user= "root";
+$password= "0000";
+$dbname= "dwm8";
+$port= 3306;
+
+$res = mysqli_connect($host, $user, $password, $dbname, $port);
+if (!$res) {
+    die('Erreur de connexion (' . mysqli_connect_errno() . ') '
+            . mysqli_connect_error());
+}
+mysqli_set_charset($res, 'utf8');
+
+if (isset($_POST['id']) && !empty($_POST)) {
+  $result = mysqli_query($res, 'SELECT * FROM `task` WHERE id=' . $_POST["id"] . ';');
+  var_dump("Nb rows :", mysqli_num_rows($result)); //http://php.net/manual/fr/mysqli-result.num-rows.php
+  var_dump("Result row :", mysqli_fetch_row($result)); //http://php.net/manual/fr/mysqli-result.fetch-row.php
+
+}
+
+/*$_GET["id"] = "2 UNION SELECT * FROM user";
+$result = mysqli_query($res, 'SELECT 'id', 'name' FROM `task` WHERE id=' . $_GET["id"] . ';');*/
